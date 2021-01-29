@@ -14,7 +14,6 @@ C:\Users\TL\source\repos\HaiQuan\obj\Debug\RdlCompile.compiled
 C:\Github\HaiQuan\HaiQuan\bin\Debug\HaiQuan.exe.config
 C:\Github\HaiQuan\HaiQuan\bin\Debug\HaiQuan.exe
 C:\Github\HaiQuan\HaiQuan\bin\Debug\HaiQuan.pdb
-C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.csprojAssemblyReference.cache
 C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.UI.LogIn.resources
 C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.MainMenu.resources
 C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.Properties.Resources.resources
@@ -83,3 +82,9 @@ C:\Github\HaiQuan\HaiQuan\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources
 C:\Github\HaiQuan\HaiQuan\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Github\HaiQuan\HaiQuan\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Github\HaiQuan\HaiQuan\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.UI.PickingSTK.resources
+C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.csprojAssemblyReference.cache
+C:\Github\HaiQuan\HaiQuan\bin\Debug\HaiQuan.exe.manifest
+C:\Github\HaiQuan\HaiQuan\bin\Debug\HaiQuan.application
+C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.exe.manifest
+C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.application

@@ -29,7 +29,6 @@ namespace HaiQuan.UI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.txt_UserName = new System.Windows.Forms.TextBox();
             this.txt_Password = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,7 +40,7 @@ namespace HaiQuan.UI
             // 
             // txt_UserName
             // 
-            this.txt_UserName.Location = new System.Drawing.Point(185, 99);
+            this.txt_UserName.Location = new System.Drawing.Point(185, 103);
             this.txt_UserName.Margin = new System.Windows.Forms.Padding(4);
             this.txt_UserName.Name = "txt_UserName";
             this.txt_UserName.Size = new System.Drawing.Size(203, 27);
@@ -92,10 +91,11 @@ namespace HaiQuan.UI
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::HaiQuan.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(95, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(268, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 

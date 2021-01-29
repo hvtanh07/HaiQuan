@@ -36,9 +36,20 @@ namespace HaiQuan
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QuyCach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Donvi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLot = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KhoChuyenXuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KhoNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.STK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosecode = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txt_Ma = new System.Windows.Forms.TextBox();
@@ -52,8 +63,8 @@ namespace HaiQuan
             this.groupBox2.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,31 +75,33 @@ namespace HaiQuan
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.CDSIN);
             this.tabControl1.Controls.Add(this.CDSOUT);
-            this.tabControl1.Location = new System.Drawing.Point(3, 2);
+            this.tabControl1.Location = new System.Drawing.Point(1, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1143, 767);
+            this.tabControl1.Size = new System.Drawing.Size(1097, 768);
             this.tabControl1.TabIndex = 0;
             // 
             // CDSIN
             // 
+            this.CDSIN.BackColor = System.Drawing.Color.White;
             this.CDSIN.Controls.Add(this.pictureBox1);
             this.CDSIN.Controls.Add(this.groupBox2);
             this.CDSIN.Controls.Add(this.groupBox1);
+            this.CDSIN.ForeColor = System.Drawing.SystemColors.ControlText;
             this.CDSIN.Location = new System.Drawing.Point(4, 25);
             this.CDSIN.Name = "CDSIN";
             this.CDSIN.Padding = new System.Windows.Forms.Padding(3);
-            this.CDSIN.Size = new System.Drawing.Size(1135, 738);
+            this.CDSIN.Size = new System.Drawing.Size(1089, 739);
             this.CDSIN.TabIndex = 0;
             this.CDSIN.Text = "CDS In";
-            this.CDSIN.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(6, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(334, 65);
+            this.pictureBox1.Size = new System.Drawing.Size(348, 99);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -98,12 +111,12 @@ namespace HaiQuan
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.tabControl2);
-            this.groupBox2.Location = new System.Drawing.Point(6, 197);
+            this.groupBox2.Location = new System.Drawing.Point(3, 231);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1126, 535);
+            this.groupBox2.Size = new System.Drawing.Size(1080, 508);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Chi tiết";
+            this.groupBox2.Text = "Danh sách sản phẩm";
             // 
             // tabControl2
             // 
@@ -112,57 +125,149 @@ namespace HaiQuan
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl2.Controls.Add(this.tabPage1);
             this.tabControl2.Controls.Add(this.tabPage2);
-            this.tabControl2.Location = new System.Drawing.Point(6, 30);
+            this.tabControl2.Location = new System.Drawing.Point(6, 21);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1114, 499);
-            this.tabControl2.TabIndex = 1;
+            this.tabControl2.Size = new System.Drawing.Size(1071, 481);
+            this.tabControl2.TabIndex = 2;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.reportViewer1);
+            this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1106, 470);
+            this.tabPage1.Size = new System.Drawing.Size(1063, 452);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Print Layout";
+            this.tabPage1.Text = "Modify Layout";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // reportViewer1
-            // 
-            this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.reportViewer1.Location = new System.Drawing.Point(6, 6);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1094, 458);
-            this.reportViewer1.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.dataGridView1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1106, 470);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Modify Layout";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 6);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.stt,
+            this.maSP,
+            this.TenSP,
+            this.QuyCach,
+            this.Donvi,
+            this.SL,
+            this.SoLot,
+            this.KhoChuyenXuat,
+            this.KhoNhap,
+            this.STK,
+            this.Choosecode});
+            this.dataGridView1.Location = new System.Drawing.Point(3, 6);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1094, 458);
+            this.dataGridView1.Size = new System.Drawing.Size(1054, 443);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // stt
+            // 
+            this.stt.DataPropertyName = "STT";
+            this.stt.HeaderText = "STT";
+            this.stt.MinimumWidth = 6;
+            this.stt.Name = "stt";
+            // 
+            // maSP
+            // 
+            this.maSP.DataPropertyName = "MaSP";
+            this.maSP.HeaderText = "Mã SP";
+            this.maSP.MinimumWidth = 6;
+            this.maSP.Name = "maSP";
+            // 
+            // TenSP
+            // 
+            this.TenSP.DataPropertyName = "TenSP";
+            this.TenSP.HeaderText = "Tên SP";
+            this.TenSP.MinimumWidth = 6;
+            this.TenSP.Name = "TenSP";
+            // 
+            // QuyCach
+            // 
+            this.QuyCach.DataPropertyName = "QuyCach";
+            this.QuyCach.HeaderText = "Quy cách";
+            this.QuyCach.MinimumWidth = 6;
+            this.QuyCach.Name = "QuyCach";
+            // 
+            // Donvi
+            // 
+            this.Donvi.DataPropertyName = "Donvi";
+            this.Donvi.HeaderText = "Đơn vị";
+            this.Donvi.MinimumWidth = 6;
+            this.Donvi.Name = "Donvi";
+            // 
+            // SL
+            // 
+            this.SL.DataPropertyName = "SoLuong";
+            this.SL.HeaderText = "Số lượng";
+            this.SL.MinimumWidth = 6;
+            this.SL.Name = "SL";
+            // 
+            // SoLot
+            // 
+            this.SoLot.DataPropertyName = "SoLot";
+            this.SoLot.HeaderText = "Số lot";
+            this.SoLot.MinimumWidth = 6;
+            this.SoLot.Name = "SoLot";
+            // 
+            // KhoChuyenXuat
+            // 
+            this.KhoChuyenXuat.DataPropertyName = "KhoXuat";
+            this.KhoChuyenXuat.HeaderText = "Kho chuyển xuất";
+            this.KhoChuyenXuat.MinimumWidth = 6;
+            this.KhoChuyenXuat.Name = "KhoChuyenXuat";
+            // 
+            // KhoNhap
+            // 
+            this.KhoNhap.DataPropertyName = "KhoNhap";
+            this.KhoNhap.HeaderText = "Kho chuyển nhập";
+            this.KhoNhap.MinimumWidth = 6;
+            this.KhoNhap.Name = "KhoNhap";
+            // 
+            // STK
+            // 
+            this.STK.DataPropertyName = "STK";
+            this.STK.HeaderText = "STK";
+            this.STK.MinimumWidth = 6;
+            this.STK.Name = "STK";
+            // 
+            // Choosecode
+            // 
+            this.Choosecode.HeaderText = "Choose";
+            this.Choosecode.MinimumWidth = 6;
+            this.Choosecode.Name = "Choosecode";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.reportViewer1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1063, 452);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Print Layout";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportViewer1.DocumentMapWidth = 90;
+            this.reportViewer1.Location = new System.Drawing.Point(6, 6);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(1051, 440);
+            this.reportViewer1.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -173,9 +278,9 @@ namespace HaiQuan
             this.groupBox1.Controls.Add(this.txt_Type);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Location = new System.Drawing.Point(3, 77);
+            this.groupBox1.Location = new System.Drawing.Point(3, 111);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1123, 114);
+            this.groupBox1.Size = new System.Drawing.Size(1077, 114);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chi tiết";
@@ -194,6 +299,8 @@ namespace HaiQuan
             // 
             // txt_Ma
             // 
+            this.txt_Ma.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txt_Ma.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txt_Ma.Location = new System.Drawing.Point(546, 52);
             this.txt_Ma.Name = "txt_Ma";
             this.txt_Ma.Size = new System.Drawing.Size(203, 22);
@@ -206,6 +313,7 @@ namespace HaiQuan
             this.txt_Type.Name = "txt_Type";
             this.txt_Type.Size = new System.Drawing.Size(231, 22);
             this.txt_Type.TabIndex = 11;
+            this.txt_Type.TextChanged += new System.EventHandler(this.txt_Type_TextChanged);
             this.txt_Type.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnterKeyPress);
             // 
             // label1
@@ -231,7 +339,7 @@ namespace HaiQuan
             this.CDSOUT.Location = new System.Drawing.Point(4, 25);
             this.CDSOUT.Name = "CDSOUT";
             this.CDSOUT.Padding = new System.Windows.Forms.Padding(3);
-            this.CDSOUT.Size = new System.Drawing.Size(1135, 738);
+            this.CDSOUT.Size = new System.Drawing.Size(1089, 739);
             this.CDSOUT.TabIndex = 1;
             this.CDSOUT.Text = "CDS out";
             this.CDSOUT.UseVisualStyleBackColor = true;
@@ -240,7 +348,7 @@ namespace HaiQuan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1147, 770);
+            this.ClientSize = new System.Drawing.Size(1100, 777);
             this.Controls.Add(this.tabControl1);
             this.Name = "MainMenu";
             this.Text = "Main menu";
@@ -251,8 +359,8 @@ namespace HaiQuan
             this.groupBox2.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -277,6 +385,17 @@ namespace HaiQuan
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn stt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QuyCach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Donvi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLot;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KhoChuyenXuat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KhoNhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STK;
+        private System.Windows.Forms.DataGridViewButtonColumn Choosecode;
     }
 }
 

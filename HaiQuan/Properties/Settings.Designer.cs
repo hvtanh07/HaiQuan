@@ -32,5 +32,16 @@ namespace HaiQuan.Properties {
                 return ((string)(this["testdbConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SFT;Initial Catalog=TEST06;Persist Security Info=True;User ID=soft;Pa" +
+            "ssword=techlink@!@#")]
+        public string TEST06ConnectionString {
+            get {
+                return ((string)(this["TEST06ConnectionString"]));
+            }
+        }
     }
 }

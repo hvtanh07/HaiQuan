@@ -23,7 +23,9 @@ namespace HaiQuan.UI
                 (txt_UserName.Text.ToUpper() == "TUANANH" && txt_Password.Text == "123456") ||
                 (txt_UserName.Text.ToUpper() == "HOANGTRIEU" && txt_Password.Text == "123456"))
             {
+                this.Hide();
                 MainMenu menu = new MainMenu();
+                menu.Closed += (s, args) => this.Close();
                 menu.Show();
             }
             else
