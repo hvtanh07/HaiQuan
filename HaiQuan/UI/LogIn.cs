@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HaiQuan.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,7 @@ namespace HaiQuan.UI
                 (txt_UserName.Text.ToUpper() == "HOANGTRIEU" && txt_Password.Text == "123456"))
             {
                 this.Hide();
-                MainMenu menu = new MainMenu();
+                NewRecord menu = new NewRecord();
                 menu.Closed += (s, args) => this.Close();
                 menu.Show();
             }
@@ -45,7 +46,9 @@ namespace HaiQuan.UI
                 (txt_UserName.Text.ToUpper() == "TUANANH" && txt_Password.Text == "123456") ||
                 (txt_UserName.Text.ToUpper() == "HOANGTRIEU" && txt_Password.Text == "123456"))
                 {
-                    MainMenu menu = new MainMenu();
+                    this.Hide();
+                    NewRecord menu = new NewRecord();
+                    menu.Closed += (s, args) => this.Close();
                     menu.Show();
                 }
                 else

@@ -15,11 +15,11 @@ using HaiQuan.UI;
 
 namespace HaiQuan
 {
-    public partial class MainMenu : Form
+    public partial class ChiTietPhieu : Form
     {
         Controller controller;
 
-        public MainMenu()
+        public ChiTietPhieu()
         {
             controller = new Controller();
             InitializeComponent();
@@ -36,8 +36,6 @@ namespace HaiQuan
             {
                 e.Handled = true;
             }
-
-            // only allow one decimal point
             if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;
@@ -93,8 +91,7 @@ namespace HaiQuan
                 MessageBox.Show("Empty fields...", "Error!");
         }       
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
+        {          
             var senderGrid = (DataGridView)sender;
 
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
@@ -105,8 +102,6 @@ namespace HaiQuan
                 picker.ShowDialog();
                 dataGridView1.Rows[e.RowIndex].Cells[10].Value = picker.Opgave;
             }
-        }
-
-        
+        }        
     }
 }

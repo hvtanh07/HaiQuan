@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HaiQuan.exe" size="243152">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HaiQuan.exe" size="250320">
       <assemblyIdentity name="HaiQuan" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Zbm1vG0fjILsOljSS2qHYgd6LmqiVLYvDnRKX9PvQ7Q=</dsig:DigestValue>
+        <dsig:DigestValue>6/2niPFI2Fids5voZj0EpQ3B38aKVqdA1XmxUicP0UQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -99,6 +99,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MVC\Controller.cs" />
+    <Compile Include="MVC\PhieuNghiemThu.cs" />
+    <Compile Include="MVC\PhieuNghiemThuTG.cs" />
     <Compile Include="MVC\ThongTinPhieu.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -111,20 +113,32 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Testdata.xsd</DependentUpon>
     </Compile>
+    <Compile Include="UI\ConFirming.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ConFirming.Designer.cs">
+      <DependentUpon>ConFirming.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\MainMenu.cs">
+    <Compile Include="UI\ChiTietPhieu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\MainMenu.Designer.cs">
-      <DependentUpon>MainMenu.cs</DependentUpon>
+    <Compile Include="UI\ChiTietPhieu.Designer.cs">
+      <DependentUpon>ChiTietPhieu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\NewRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NewRecord.Designer.cs">
+      <DependentUpon>NewRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\PickingSTK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,16 +146,22 @@
       <DependentUpon>PickingSTK.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="UI\ConFirming.resx">
+      <DependentUpon>ConFirming.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\MainMenu.resx">
-      <DependentUpon>MainMenu.cs</DependentUpon>
+    <EmbeddedResource Include="UI\ChiTietPhieu.resx">
+      <DependentUpon>ChiTietPhieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NewRecord.resx">
+      <DependentUpon>NewRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\PickingSTK.resx">
       <DependentUpon>PickingSTK.cs</DependentUpon>

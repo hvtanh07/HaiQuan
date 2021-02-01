@@ -15,7 +15,6 @@ C:\Github\HaiQuan\HaiQuan\bin\Debug\HaiQuan.exe.config
 C:\Github\HaiQuan\HaiQuan\bin\Debug\HaiQuan.exe
 C:\Github\HaiQuan\HaiQuan\bin\Debug\HaiQuan.pdb
 C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.UI.LogIn.resources
-C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.MainMenu.resources
 C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.Properties.Resources.resources
 C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.csproj.GenerateResource.cache
 C:\Github\HaiQuan\HaiQuan\obj\Debug\RdlCompile.cache
@@ -88,3 +87,6 @@ C:\Github\HaiQuan\HaiQuan\bin\Debug\HaiQuan.exe.manifest
 C:\Github\HaiQuan\HaiQuan\bin\Debug\HaiQuan.application
 C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.exe.manifest
 C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.application
+C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.UI.NewRecord.resources
+C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.UI.ConFirming.resources
+C:\Github\HaiQuan\HaiQuan\obj\Debug\HaiQuan.ChiTietPhieu.resources
